@@ -1,5 +1,6 @@
 package com.example.second_work;
 
+import android.graphics.Color;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -24,18 +25,18 @@ public class MyAdapter extends RecyclerView.Adapter<MyViewHolder> {
 
     @Override
     public void onBindViewHolder(MyViewHolder holder, int position) {
-        holder.buttonLeft.setOnClickListener(v -> {
-            System.out.println("Left button was pressed: " + data.get(position));
+        holder.btn.setOnClickListener(v -> {
+            System.out.println("Button was pressed: " + data.get(position));
         });
+        String newText = "Это элемент номер " + (position+1);
+        holder.txt.setText(newText);
 
-        holder.buttonRight.setOnClickListener(v -> {
-            System.out.println("Right button was pressed: " + data.get(position));
-        });
     }
 
     @Override
     public int getItemCount() {
         return data.size();
+
     }
 
 }

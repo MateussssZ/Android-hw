@@ -20,10 +20,10 @@ public class MainActivity extends AppCompatActivity {
         EdgeToEdge.enable(this);
         setContentView(R.layout.activity_main);
         rView = findViewById(R.id.recyclerView);
-        rView.setLayoutManager(new LinearLayoutManager(this));
+        rView.setLayoutManager(new LinearLayoutManager(this, LinearLayoutManager.HORIZONTAL, false));
 
         List<String> data = new ArrayList<>();
-        for (int i = 1; i <= 20; i++) {
+        for (int i = 1; i <= 10; i++) {
             data.add("Item number " + i);
         }
 

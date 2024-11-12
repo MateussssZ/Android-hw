@@ -3,18 +3,21 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:orientation="vertical"
     android:layout_width="match_parent"
+    android:gravity="center"
     android:layout_height="match_parent">
 
-    <Button
-        android:id="@+id/button_left"
-        android:layout_width="match_parent"
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Влево" />
+        android:gravity="center_vertical"
+        android:text="Это элемент номер"
+        android:textSize="18sp" />
 
     <Button
-        android:id="@+id/button_right"
+        android:id="@+id/button"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Вправо" />
+        android:text="ТЫК" />
 
 </LinearLayout>
